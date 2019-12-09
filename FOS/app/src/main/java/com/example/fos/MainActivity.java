@@ -14,16 +14,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void onClick1(View v){
+
+    public void onClick1(View v) {
         Intent intent = new Intent(MainActivity.this, HamActivity.class);
         startActivity(intent);
     }
-    public void onClick2(View v){
+
+    public void onClick2(View v) {
         Intent intent = new Intent(MainActivity.this, ARimActivity.class);
         startActivity(intent);
     }
-    public void onClick3(View v){
+
+    public void onClick3(View v) {
         Intent intent = new Intent(MainActivity.this, KBActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClick4(View v) {
+        Intent intent = new Intent(MainActivity.this, MyPageActivity.class);
         startActivity(intent);
     }
 }

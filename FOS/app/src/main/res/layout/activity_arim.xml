@@ -10,21 +10,21 @@
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar4"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="124dp"
         android:background="#FF0000"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar3"
         app:title="공지사항"
-        app:titleTextAppearance="@style/TextAppearance.AppCompat.Display1" />
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar3"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
         android:background="#FF0000"
         android:minHeight="?attr/actionBarSize"
         android:onClick="onClick2"
@@ -32,12 +32,26 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar2"
         app:title="좌석예약"
-        app:titleTextAppearance="@style/TextAppearance.AppCompat.Display1" />
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar7"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="75dp"
+        android:background="#FF0000"
+        android:minHeight="?attr/actionBarSize"
+        android:onClick="onClick2"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:title="요청사항"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="45dp"
         android:layout_marginTop="70dp"
         android:background="#FF0000"
         android:minHeight="?attr/actionBarSize"
@@ -46,7 +60,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:title="메뉴판"
-        app:titleTextAppearance="@style/TextAppearance.AppCompat.Display1" />
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -79,9 +93,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:text="주소 : 창원시"
-        android:textSize="30dp"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar4" />
 
@@ -91,9 +105,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:text="운영시간 : 10:00 ~ 20:00"
-        android:textSize="30dp"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -103,10 +117,34 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:text="휴무일 : 매주 일요일"
-        android:textSize="30dp"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bok" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="301dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="11dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/seat3" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="요청사항을 입력하세요"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

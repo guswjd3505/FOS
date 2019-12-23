@@ -30,8 +30,5 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onClick4(View v) {
-        Intent intent = new Intent(MainActivity.this, MyPageActivity.class);
-        startActivity(intent);
-    }
+
 }

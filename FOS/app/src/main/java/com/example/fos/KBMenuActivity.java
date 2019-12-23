@@ -2,6 +2,7 @@ package com.example.fos;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -44,5 +45,6 @@ public class KBMenuActivity extends AppCompatActivity {
             temp[0]=0;
         }
     }
+
 
 }
